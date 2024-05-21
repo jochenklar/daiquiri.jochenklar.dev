@@ -1,6 +1,7 @@
 from django.urls import include, path
 from django.contrib import admin
 from django.views.generic import TemplateView
+from django.views.i18n import JavaScriptCatalog
 
 from daiquiri.core.views import home
 
@@ -26,6 +27,7 @@ urlpatterns = [
 
     path('robots.txt', TemplateView.as_view(template_name='site/robots.txt', content_type='text/plain'), name='robots'),
     path('layout/', TemplateView.as_view(template_name='wordpress/layout.html'), name='layout'),
+    path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
 
     path('admin/', admin.site.urls),
 ]
