@@ -18,6 +18,7 @@ SITE_CREATED = '2019-01-01'
 SITE_UPDATED = '2019-04-01'
 
 INSTALLED_APPS = DJANGO_APPS + [
+    'theme',
     'daiquiri.auth',
     'daiquiri.conesearch',
     'daiquiri.contact',
