@@ -1,0 +1,48 @@
+:root,
+[data-bs-theme=light] {
+    --red: #90203A;
+    --red-rgb: 144, 32, 58;
+
+    --dark-red: #641628;
+    --dark-red-rgb: 100, 22, 40;
+
+    --bs-primary: var(--red);
+    --bs-primary-rgb: var(--red-rgb);
+
+    --bs-primary-bg: var(--red);
+    --bs-primary-bg-rgb: var(--red-rgb);
+
+    --bs-link-color: var(--red);
+    --bs-link-color-rgb: var(--red-rgb);
+    --bs-dark-rgb: var(--dark-red-rgb);
+
+    --bs-navbar-color: var(--bs-link-color-rgb);
+}
+
+footer {
+    --dq-footer-content-bg: var(--red);
+    --dq-footer-bottom-bg: var(--dark-red);
+}
+
+.form-control:focus {
+    border-color: rgba(144, 32, 58, 0.25);
+    box-shadow: 0 0 0 2px rgba(144, 32, 58, 0.25);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--red);
+    --bs-btn-border-color: var(--red);
+    --bs-btn-hover-bg: var(--dark-red);
+    --bs-btn-hover-border-color: var(--dark-red);
+    --bs-btn-active-bg: var(--dark-red);
+    --bs-btn-active-border-color: var(--dark-red);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--red);
+    --bs-btn-border-color: var(--red);
+    --bs-btn-hover-bg: var(--red);
+    --bs-btn-hover-border-color: var(--red);
+    --bs-btn-active-bg: var(--red);
+    --bs-btn-active-border-color: var(--red);
+}
