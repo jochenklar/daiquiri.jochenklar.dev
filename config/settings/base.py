@@ -77,59 +77,15 @@ QUERY_FORMS = [
     {
         'key': 'cone',
         'label': 'Source cone search',
-        'template': 'query/new/query_form_cone.html',
-        'fields': [
-            {
-                'key': 'ra',
-                'type': 'number',
-                'label': 'RA',
-                'help': 'Right ascension in degrees (decimal form)',
-                'default_value': 10.684708,
-                'width': 4
-            },
-            {
-                'key': 'dec',
-                'type': 'number',
-                'label': 'DEC',
-                'help': 'Declination in degrees (decimal form)',
-                'default_value': 41.26875,
-                'width': 4
-            },
-            {
-                'key': 'radius',
-                'type': 'number',
-                'label': 'Radius',
-                'help': 'Radius in degrees',
-                'default_value': 10,
-                'width': 4
-            }
-        ],
         'submit': 'Submit new cone search',
+        'template': 'query/new/query_form_cone.html',
         'adapter': 'jochenklar.adapter.ConeSearchQueryFormAdapter'
     },
     {
         'key': 'mass',
         'label': 'Halo mass range',
-        'template': 'query/new/query_form_halo_mass.html',
-        'fields': [
-            {
-                'key': 'min_mass',
-                'type': 'number',
-                'label': 'Minimum halo mass',
-                'help': 'Minimum halo mass (in solar masses)',
-                'default_value': 1e+15,
-                'width': 6
-            },
-            {
-                'key': 'max_mass',
-                'type': 'number',
-                'label': 'Maximum halo mass',
-                'help': 'Maximum halo mass (in solar masses)',
-                'default_value': 3e+15,
-                'width': 6
-            }
-        ],
         'submit': 'Submit new cone search',
+        'template': 'query/new/query_form_halo_mass.html',
         'adapter': 'jochenklar.adapter.HaloMassQueryFormAdapter'
     },
     {
