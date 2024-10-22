@@ -84,7 +84,7 @@ QUERY_FORMS = [
     {
         'key': 'mass',
         'label': 'Halo mass range',
-        'submit': 'Submit new cone search',
+        'submit': 'Submit new halo mass range search',
         'template': 'query/new/query_form_halo_mass.html',
         'adapter': 'jochenklar.adapter.HaloMassQueryFormAdapter'
     },

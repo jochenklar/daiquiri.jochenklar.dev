@@ -1,0 +1,53 @@
+:root,
+[data-bs-theme=light] {
+    --gaia-red: #90203A;
+    --gaia-red-rgb: 144, 32, 58;
+
+    --gaia-dark-red: #641628;
+    --gaia-dark-red-rgb: 100, 22, 40;
+
+    --bs-primary: var(--gaia-red);
+    --bs-primary-rgb: var(--gaia-red-rgb);
+
+    --bs-primary-bg: var(--gaia-red);
+    --bs-primary-bg-rgb: var(--gaia-red-rgb);
+
+    --bs-link-color: var(--gaia-red);
+    --bs-link-color-rgb: var(--gaia-red-rgb);
+    --bs-dark-rgb: var(--gaia-dark-red-rgb);
+
+    --bs-navbar-color: var(--bs-link-color-rgb);
+}
+
+footer {
+    --dq-footer-content-bg: var(--gaia-red);
+    --dq-footer-bottom-bg: var(--gaia-dark-red);
+}
+
+.form-control:focus,
+.form-check-input:focus {
+    border-color: rgba(144, 32, 58, 0.25);
+    box-shadow: 0 0 0 2px rgba(144, 32, 58, 0.25);
+}
+.form-check-input:checked {
+    border-color: var(--gaia-red);
+    background-color: var(--gaia-red);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--gaia-red);
+    --bs-btn-border-color: var(--gaia-red);
+    --bs-btn-hover-bg: var(--gaia-dark-red);
+    --bs-btn-hover-border-color: var(--gaia-dark-red);
+    --bs-btn-active-bg: var(--gaia-dark-red);
+    --bs-btn-active-border-color: var(--gaia-dark-red);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--gaia-red);
+    --bs-btn-border-color: var(--gaia-red);
+    --bs-btn-hover-bg: var(--gaia-red);
+    --bs-btn-hover-border-color: var(--gaia-red);
+    --bs-btn-active-bg: var(--gaia-red);
+    --bs-btn-active-border-color: var(--gaia-red);
+}
