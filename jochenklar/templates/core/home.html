@@ -3,10 +3,11 @@
 {% load i18n %}
 {% load core_tags %}
 
-{% block page %}
-<div class="home">
+{% block heading %}
     <h1>Daiquiri</h1>
+{% endblock %}
 
+{% block page %}
     <h2>A framework for the publication of scientific databases</h2>
 
     <div class="row">
@@ -69,18 +70,13 @@
             </p>
         </div>
     </div>
-</div>
-
 {% endblock %}
 
 {% block sidebar %}
 
-{% if not user.is_authenticated %}
-<div class="home">
+    {% if not request.user.is_authenticated %}
     <h2>Login</h2>
-
     {% include 'account/login_form.html' %}
-</div>
-{% endif %}
+    {% endif %}
 
 {% endblock %}
